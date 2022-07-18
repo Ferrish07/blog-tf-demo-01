@@ -37,4 +37,7 @@ steps:
   - '-c'
   - |     
       terraform apply -auto-approve
+
+      options:
+  logging: CLOUD_LOGGING_ONLY
 # [END tf-apply]   

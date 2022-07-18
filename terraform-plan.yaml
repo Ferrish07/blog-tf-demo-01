@@ -27,4 +27,7 @@ steps:
       echo ""
       echo "*************** TERRAFOM PLAN ******************"
       terraform plan || exit 1
+
+      options:
+  logging: CLOUD_LOGGING_ONLY
 # [END tf-plan]
