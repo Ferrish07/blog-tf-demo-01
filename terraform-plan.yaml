@@ -16,6 +16,7 @@ steps:
   - |
       echo ""
       echo "*************** TERRAFORM INIT ******************"
+      gcloud config set auth/impersonate_service_account {_TF_SA}
       terraform init || exit 1
 # [START tf-plan]
 - id: 'tf plan'
@@ -27,7 +28,4 @@ steps:
       echo ""
       echo "*************** TERRAFOM PLAN ******************"
       terraform plan || exit 1
-
-      options:
-  logging: CLOUD_LOGGING_ONLY
 # [END tf-plan]
