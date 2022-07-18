@@ -1,4 +1,4 @@
 provider "google" {
-  project = "ab-ferris-dev"
+  project = "my-project-test-356720"
   region = "europe-west2"
 }
